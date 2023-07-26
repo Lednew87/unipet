@@ -1,0 +1,12 @@
+C:\Users\wende\source\repos\LednewPet\LednewPet\bin\Debug\LednewPet.exe.config
+C:\Users\wende\source\repos\LednewPet\LednewPet\bin\Debug\LednewPet.exe
+C:\Users\wende\source\repos\LednewPet\LednewPet\bin\Debug\LednewPet.pdb
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.csproj.AssemblyReference.cache
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.csproj.SuggestedBindingRedirects.cache
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.Form1.resources
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.Properties.Resources.resources
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.csproj.GenerateResource.cache
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.csproj.CoreCompileInputs.cache
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.exe
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.pdb
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.frmCadClientes.resources
