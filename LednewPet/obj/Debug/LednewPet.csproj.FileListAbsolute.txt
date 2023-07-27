@@ -10,3 +10,7 @@ C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.csproj.CoreC
 C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.exe
 C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.pdb
 C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.frmCadClientes.resources
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.frmRacas.resources
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.frmAgendamentos.resources
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.frmAnimais.resources
+C:\Users\wende\source\repos\LednewPet\LednewPet\obj\Debug\LednewPet.frmServicos.resources

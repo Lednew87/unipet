@@ -32,17 +32,16 @@
             this.PanelCenter = new System.Windows.Forms.Panel();
             this.PanelRight = new System.Windows.Forms.Panel();
             this.PanelLeft = new System.Windows.Forms.Panel();
+            this.PanelSelect = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnAgendamentos = new System.Windows.Forms.Button();
             this.btnServicos = new System.Windows.Forms.Button();
             this.btnRacas = new System.Windows.Forms.Button();
             this.btnAnimais = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.PanelTop = new System.Windows.Forms.Panel();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.PanelSelect = new System.Windows.Forms.Panel();
             this.PanelCenter.SuspendLayout();
             this.PanelLeft.SuspendLayout();
             this.PanelTop.SuspendLayout();
@@ -93,6 +92,16 @@
             this.PanelLeft.Size = new System.Drawing.Size(277, 612);
             this.PanelLeft.TabIndex = 1;
             this.PanelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelLeft_Paint_1);
+            // 
+            // PanelSelect
+            // 
+            this.PanelSelect.BackColor = System.Drawing.Color.Honeydew;
+            this.PanelSelect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelSelect.ForeColor = System.Drawing.Color.SeaGreen;
+            this.PanelSelect.Location = new System.Drawing.Point(3, 35);
+            this.PanelSelect.Name = "PanelSelect";
+            this.PanelSelect.Size = new System.Drawing.Size(24, 53);
+            this.PanelSelect.TabIndex = 10;
             // 
             // btnHome
             // 
@@ -182,26 +191,19 @@
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(206, 84);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(807, 531);
-            this.panel3.TabIndex = 0;
-            // 
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.SeaGreen;
             this.PanelTop.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PanelTop.Controls.Add(this.btnMin);
             this.PanelTop.Controls.Add(this.btnSair);
-            this.PanelTop.Controls.Add(this.panel3);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.ForeColor = System.Drawing.Color.White;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
             this.PanelTop.Name = "PanelTop";
             this.PanelTop.Size = new System.Drawing.Size(1030, 52);
             this.PanelTop.TabIndex = 0;
+            this.PanelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelTop_Paint);
             // 
             // btnMin
             // 
@@ -233,16 +235,6 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.button2_Click);
             // 
-            // PanelSelect
-            // 
-            this.PanelSelect.BackColor = System.Drawing.Color.Honeydew;
-            this.PanelSelect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanelSelect.ForeColor = System.Drawing.Color.SeaGreen;
-            this.PanelSelect.Location = new System.Drawing.Point(3, 35);
-            this.PanelSelect.Name = "PanelSelect";
-            this.PanelSelect.Size = new System.Drawing.Size(24, 53);
-            this.PanelSelect.TabIndex = 10;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -268,7 +260,6 @@
         #endregion
         private System.Windows.Forms.Panel PanelCenter;
         private System.Windows.Forms.Panel PanelLeft;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel PanelTop;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnAgendamentos;

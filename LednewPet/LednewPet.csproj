@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendamentos.Designer.cs">
+      <DependentUpon>frmAgendamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnimais.Designer.cs">
+      <DependentUpon>frmAnimais.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,13 +76,36 @@
     <Compile Include="frmRacas.Designer.cs">
       <DependentUpon>frmRacas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicos.Designer.cs">
+      <DependentUpon>frmServicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="petshopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>petshopDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgendamentos.resx">
+      <DependentUpon>frmAgendamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnimais.resx">
+      <DependentUpon>frmAnimais.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadClientes.resx">
       <DependentUpon>frmCadClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRacas.resx">
+      <DependentUpon>frmRacas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicos.resx">
+      <DependentUpon>frmServicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,6 +117,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="petshopDataSet.xsc">
+      <DependentUpon>petshopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="petshopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>petshopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="petshopDataSet.xss">
+      <DependentUpon>petshopDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,6 +1,6 @@
 ﻿namespace LednewPet
 {
-    partial class frmRacas
+    partial class frmAnimais
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // frmRacas
+            // frmAnimais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1030, 665);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmRacas";
-            this.Text = "frmRacas";
+            this.Name = "frmAnimais";
+            this.Text = "frmAnimais";
+            this.Load += new System.EventHandler(this.frmAnimais_Load);
             this.ResumeLayout(false);
 
         }

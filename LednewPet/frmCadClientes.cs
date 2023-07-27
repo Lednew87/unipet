@@ -16,5 +16,38 @@ namespace LednewPet
         {
             InitializeComponent();
         }
+
+        private void clientesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.clientesBindingSource.EndEdit();
+                clientesTableAdapter.Update(petshopDataSet.clientes);
+                groupBox1.Enabled = false;
+                MessageBox.Show("Cadastro efetuado com sucesso!");
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro, verifique os dados inseridos e tente novamente.");
+
+              
+            }
+
+        }
+
+        private void frmCadClientes_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'petshopDataSet.clientes'. Você pode movê-la ou removê-la conforme necessário.
+            this.clientesTableAdapter.Fill(this.petshopDataSet.clientes);
+
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+            clientesBindingSource.AddNew();
+            groupBox1.Enabled = true;
+        }
     }
 }
