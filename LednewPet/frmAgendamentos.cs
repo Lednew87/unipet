@@ -16,5 +16,10 @@ namespace LednewPet
         {
             InitializeComponent();
         }
+
+        private void frmAgendamentos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

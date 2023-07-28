@@ -16,7 +16,7 @@ namespace LednewPet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadClientes());
+            Application.Run(new Form1());
         }
     }
 }

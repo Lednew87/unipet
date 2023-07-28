@@ -19,20 +19,27 @@ namespace LednewPet
         {
 
         }
+        private void Label1_Paint(object sender, EventArgs e)
+        {
 
-        private void PanelLeft_Paint_1(object sender, PaintEventArgs e)
+        }
+        private void Label2_Paint(object sender, EventArgs e)
+        {
+
+        }
+        private void PanelTop_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             // btn fechar
             if (MessageBox.Show("Deseja mesmo sair?", "UNIPET seu pet, nossa família!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             //btn minimizar
             this.WindowState = FormWindowState.Minimized;
@@ -43,32 +50,33 @@ namespace LednewPet
 
         }
 
-        private void btnClientes_Click(object sender, EventArgs e)
+        private void BtnClientes_Click(object sender, EventArgs e)
         {
             // instaciando btnClientes
-            frmCadClientes clientes = new frmCadClientes();
-            clientes.TopLevel = false; // hierarquia do form
-            clientes.Dock = DockStyle.Fill; // dimensão do form
+            frmCadClientes frmCadClientes = new frmCadClientes
+            {
+                TopLevel = false, // hierarquia do form
+                Dock = DockStyle.Fill // dimensão do form
+            };
+            frmCadClientes clientes = frmCadClientes;
             PanelCenter.Controls.Clear(); // limpa o painel
             PanelCenter.Controls.Add(clientes); // add o form de cadastro de clientes
             clientes.Show();
 
             // aplicando a posição do eixo X do PanelSelect nos botões selecionados
-            PanelSelect.Top = btnClientes.Top;
+            PanelSelect.Top = BtnClientes.Top;
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void BtnHome_Click(object sender, EventArgs e)
         {
             PanelCenter.Controls.Clear();
-            PanelSelect.Top = btnHome.Top;
+            PanelCenter.Controls.Add(LabelLogoLeft);
+            PanelCenter.Controls.Add(LabelLogoRight);
+            PanelSelect.Top = BtnHome.Top;
         }
 
-        private void PanelRight_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void btnRacas_Click(object sender, EventArgs e)
+        private void BtnRacas_Click(object sender, EventArgs e)
         {
             // instaciando btnRacas 
             frmRacas racas = new frmRacas();
@@ -79,10 +87,10 @@ namespace LednewPet
             racas.Show();
 
             // aplicando a posição do eixo X do PanelSelect nos botões selecionados
-            PanelSelect.Top = btnRacas.Top;
+            PanelSelect.Top = BtnRacas.Top;
         }
 
-        private void btnAnimais_Click(object sender, EventArgs e)
+        private void BtnAnimais_Click(object sender, EventArgs e)
         {
             // instaciando btnAnimais
             frmAnimais animais = new frmAnimais();
@@ -93,10 +101,10 @@ namespace LednewPet
             animais.Show();
 
             // aplicando a posição do eixo X do PanelSelect nos botões selecionados
-            PanelSelect.Top = btnAnimais.Top;
+            PanelSelect.Top = BtnAnimais.Top;
         }
 
-        private void btnServicos_Click(object sender, EventArgs e)
+        private void BtnServicos_Click(object sender, EventArgs e)
         {
             // instaciando btnServicos
             frmServicos servicos = new frmServicos();
@@ -107,10 +115,10 @@ namespace LednewPet
             servicos.Show();
 
             // aplicando a posição do eixo X do PanelSelect nos botões selecionados
-            PanelSelect.Top = btnServicos.Top;
+            PanelSelect.Top = BtnServicos.Top;
         }
 
-        private void btnAgendamentos_Click(object sender, EventArgs e)
+        private void BtnAgendamentos_Click(object sender, EventArgs e)
         {
             // instaciando btnAgendamentos 
             frmAgendamentos agendamentos = new frmAgendamentos();
@@ -121,12 +129,8 @@ namespace LednewPet
             agendamentos.Show();
 
             // aplicando a posição do eixo X do PanelSelect nos botões selecionados
-            PanelSelect.Top = btnAgendamentos.Top;
+            PanelSelect.Top = BtnAgendamentos.Top;
         }
-
-        private void PanelTop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }
