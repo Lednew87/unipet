@@ -67,8 +67,8 @@ namespace LednewPet
             try
             {
                 if (MessageBox.Show("Deseja realmente excluir este cadastro?", "UNIPET, seu pet, nossa família!",// confirmando exclusão com o usuário  
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                    _ = MessageBox.Show("Cadastro excluído com sucesso!!", "UNIPET, seu pet, nossa família!");
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) 
+                    //_ = MessageBox.Show("Cadastro excluído com sucesso!!", "UNIPET, seu pet, nossa família!");
                 {
                     clientesBindingSource.RemoveCurrent();// exclusão do registro
                     clientesTableAdapter.Update(petshopDataSet.clientes);// banco de dados atualizado
@@ -163,6 +163,11 @@ namespace LednewPet
         private void cli_nomeLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnFoto_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
         }
     }
 }

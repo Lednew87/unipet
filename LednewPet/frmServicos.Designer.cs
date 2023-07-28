@@ -57,8 +57,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.servicosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.BtnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.BtnEditar = new System.Windows.Forms.ToolStripButton();
+            this.BtnCancelarServicos = new System.Windows.Forms.ToolStripButton();
+            this.BtnEditarServicos = new System.Windows.Forms.ToolStripButton();
             serv_codigoLabel = new System.Windows.Forms.Label();
             serv_descricaoLabel = new System.Windows.Forms.Label();
             serv_precoLabel = new System.Windows.Forms.Label();
@@ -72,8 +72,10 @@
             // 
             // serv_codigoLabel
             // 
+            serv_codigoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             serv_codigoLabel.AutoSize = true;
-            serv_codigoLabel.Location = new System.Drawing.Point(31, 96);
+            serv_codigoLabel.Location = new System.Drawing.Point(17, 78);
+            serv_codigoLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             serv_codigoLabel.Name = "serv_codigoLabel";
             serv_codigoLabel.Size = new System.Drawing.Size(238, 30);
             serv_codigoLabel.TabIndex = 0;
@@ -81,8 +83,10 @@
             // 
             // serv_descricaoLabel
             // 
+            serv_descricaoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             serv_descricaoLabel.AutoSize = true;
-            serv_descricaoLabel.Location = new System.Drawing.Point(31, 156);
+            serv_descricaoLabel.Location = new System.Drawing.Point(17, 152);
+            serv_descricaoLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             serv_descricaoLabel.Name = "serv_descricaoLabel";
             serv_descricaoLabel.Size = new System.Drawing.Size(139, 30);
             serv_descricaoLabel.TabIndex = 2;
@@ -90,8 +94,10 @@
             // 
             // serv_precoLabel
             // 
+            serv_precoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             serv_precoLabel.AutoSize = true;
-            serv_precoLabel.Location = new System.Drawing.Point(31, 215);
+            serv_precoLabel.Location = new System.Drawing.Point(17, 224);
+            serv_precoLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             serv_precoLabel.Name = "serv_precoLabel";
             serv_precoLabel.Size = new System.Drawing.Size(141, 30);
             serv_precoLabel.TabIndex = 4;
@@ -99,8 +105,10 @@
             // 
             // serv_tempoLabel
             // 
+            serv_tempoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             serv_tempoLabel.AutoSize = true;
-            serv_tempoLabel.Location = new System.Drawing.Point(31, 274);
+            serv_tempoLabel.Location = new System.Drawing.Point(17, 298);
+            serv_tempoLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             serv_tempoLabel.Name = "serv_tempoLabel";
             serv_tempoLabel.Size = new System.Drawing.Size(100, 30);
             serv_tempoLabel.TabIndex = 6;
@@ -108,6 +116,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(serv_codigoLabel);
             this.groupBox1.Controls.Add(this.serv_codigoLabel1);
             this.groupBox1.Controls.Add(serv_descricaoLabel);
@@ -116,10 +126,13 @@
             this.groupBox1.Controls.Add(this.serv_precoTextBox);
             this.groupBox1.Controls.Add(serv_tempoLabel);
             this.groupBox1.Controls.Add(this.serv_tempoTextBox);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(279, 94);
+            this.groupBox1.Location = new System.Drawing.Point(292, 81);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.groupBox1.Size = new System.Drawing.Size(726, 517);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -127,11 +140,14 @@
             // 
             // serv_codigoLabel1
             // 
+            this.serv_codigoLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.serv_codigoLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.serv_codigoLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.servicosBindingSource, "serv_codigo", true));
-            this.serv_codigoLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.serv_codigoLabel1.Location = new System.Drawing.Point(275, 104);
+            this.serv_codigoLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serv_codigoLabel1.Location = new System.Drawing.Point(265, 81);
+            this.serv_codigoLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.serv_codigoLabel1.Name = "serv_codigoLabel1";
-            this.serv_codigoLabel1.Size = new System.Drawing.Size(63, 25);
+            this.serv_codigoLabel1.Size = new System.Drawing.Size(85, 31);
             this.serv_codigoLabel1.TabIndex = 1;
             this.serv_codigoLabel1.Text = "label1";
             this.serv_codigoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,26 +164,32 @@
             // 
             // serv_descricaoTextBox
             // 
+            this.serv_descricaoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.serv_descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.servicosBindingSource, "serv_descricao", true));
-            this.serv_descricaoTextBox.Location = new System.Drawing.Point(176, 149);
+            this.serv_descricaoTextBox.Location = new System.Drawing.Point(210, 143);
+            this.serv_descricaoTextBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.serv_descricaoTextBox.Name = "serv_descricaoTextBox";
-            this.serv_descricaoTextBox.Size = new System.Drawing.Size(383, 37);
+            this.serv_descricaoTextBox.Size = new System.Drawing.Size(509, 37);
             this.serv_descricaoTextBox.TabIndex = 3;
             // 
             // serv_precoTextBox
             // 
+            this.serv_precoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.serv_precoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.servicosBindingSource, "serv_preco", true));
-            this.serv_precoTextBox.Location = new System.Drawing.Point(176, 208);
+            this.serv_precoTextBox.Location = new System.Drawing.Point(210, 216);
+            this.serv_precoTextBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.serv_precoTextBox.Name = "serv_precoTextBox";
-            this.serv_precoTextBox.Size = new System.Drawing.Size(118, 37);
+            this.serv_precoTextBox.Size = new System.Drawing.Size(156, 37);
             this.serv_precoTextBox.TabIndex = 5;
             // 
             // serv_tempoTextBox
             // 
+            this.serv_tempoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.serv_tempoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.servicosBindingSource, "serv_tempo", true));
-            this.serv_tempoTextBox.Location = new System.Drawing.Point(176, 267);
+            this.serv_tempoTextBox.Location = new System.Drawing.Point(210, 288);
+            this.serv_tempoTextBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.serv_tempoTextBox.Name = "serv_tempoTextBox";
-            this.serv_tempoTextBox.Size = new System.Drawing.Size(118, 37);
+            this.serv_tempoTextBox.Size = new System.Drawing.Size(156, 37);
             this.serv_tempoTextBox.TabIndex = 7;
             // 
             // servicosTableAdapter
@@ -208,9 +230,9 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.servicosBindingNavigatorSaveItem,
-            this.BtnCancelar,
-            this.BtnEditar});
-            this.servicosBindingNavigator.Location = new System.Drawing.Point(437, 52);
+            this.BtnCancelarServicos,
+            this.BtnEditarServicos});
+            this.servicosBindingNavigator.Location = new System.Drawing.Point(438, 39);
             this.servicosBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.servicosBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.servicosBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -218,7 +240,7 @@
             this.servicosBindingNavigator.Name = "servicosBindingNavigator";
             this.servicosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
             this.servicosBindingNavigator.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.servicosBindingNavigator.Size = new System.Drawing.Size(564, 39);
+            this.servicosBindingNavigator.Size = new System.Drawing.Size(580, 39);
             this.servicosBindingNavigator.TabIndex = 1;
             this.servicosBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -276,7 +298,7 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(66, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
@@ -317,32 +339,36 @@
             this.servicosBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.servicosBindingNavigatorSaveItem.Click += new System.EventHandler(this.servicosBindingNavigatorSaveItem_Click);
             // 
-            // BtnCancelar
+            // BtnCancelarServicos
             // 
-            this.BtnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
-            this.BtnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(104, 36);
-            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelarServicos.ForeColor = System.Drawing.Color.Black;
+            this.BtnCancelarServicos.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelarServicos.Image")));
+            this.BtnCancelarServicos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnCancelarServicos.Name = "BtnCancelarServicos";
+            this.BtnCancelarServicos.Size = new System.Drawing.Size(104, 36);
+            this.BtnCancelarServicos.Text = "Cancelar";
             // 
-            // BtnEditar
+            // BtnEditarServicos
             // 
-            this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
-            this.BtnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(81, 36);
-            this.BtnEditar.Text = "Editar";
+            this.BtnEditarServicos.ForeColor = System.Drawing.Color.Black;
+            this.BtnEditarServicos.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditarServicos.Image")));
+            this.BtnEditarServicos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnEditarServicos.Name = "BtnEditarServicos";
+            this.BtnEditarServicos.Size = new System.Drawing.Size(81, 36);
+            this.BtnEditarServicos.Text = "Editar";
             // 
             // frmServicos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(1030, 665);
             this.Controls.Add(this.servicosBindingNavigator);
             this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "frmServicos";
             this.Text = "frmServicos";
             this.Load += new System.EventHandler(this.frmServicos_Load);
@@ -383,7 +409,7 @@
         private System.Windows.Forms.TextBox serv_descricaoTextBox;
         private System.Windows.Forms.TextBox serv_precoTextBox;
         private System.Windows.Forms.TextBox serv_tempoTextBox;
-        private System.Windows.Forms.ToolStripButton BtnCancelar;
-        private System.Windows.Forms.ToolStripButton BtnEditar;
+        private System.Windows.Forms.ToolStripButton BtnCancelarServicos;
+        private System.Windows.Forms.ToolStripButton BtnEditarServicos;
     }
 }

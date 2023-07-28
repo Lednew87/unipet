@@ -55,8 +55,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.racasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.BtnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.BtnEditar = new System.Windows.Forms.ToolStripButton();
+            this.BtnCancelarRaca = new System.Windows.Forms.ToolStripButton();
+            this.BtnEditarRaca = new System.Windows.Forms.ToolStripButton();
             raca_codigoLabel = new System.Windows.Forms.Label();
             raca_nomeLabel = new System.Windows.Forms.Label();
             raca_pais_origemLabel = new System.Windows.Forms.Label();
@@ -70,7 +70,8 @@
             // raca_codigoLabel
             // 
             raca_codigoLabel.AutoSize = true;
-            raca_codigoLabel.Location = new System.Drawing.Point(36, 81);
+            raca_codigoLabel.Location = new System.Drawing.Point(21, 80);
+            raca_codigoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             raca_codigoLabel.Name = "raca_codigoLabel";
             raca_codigoLabel.Size = new System.Drawing.Size(207, 30);
             raca_codigoLabel.TabIndex = 0;
@@ -79,7 +80,8 @@
             // raca_nomeLabel
             // 
             raca_nomeLabel.AutoSize = true;
-            raca_nomeLabel.Location = new System.Drawing.Point(36, 145);
+            raca_nomeLabel.Location = new System.Drawing.Point(21, 136);
+            raca_nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             raca_nomeLabel.Name = "raca_nomeLabel";
             raca_nomeLabel.Size = new System.Drawing.Size(192, 30);
             raca_nomeLabel.TabIndex = 2;
@@ -88,7 +90,8 @@
             // raca_pais_origemLabel
             // 
             raca_pais_origemLabel.AutoSize = true;
-            raca_pais_origemLabel.Location = new System.Drawing.Point(36, 200);
+            raca_pais_origemLabel.Location = new System.Drawing.Point(21, 198);
+            raca_pais_origemLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             raca_pais_origemLabel.Name = "raca_pais_origemLabel";
             raca_pais_origemLabel.Size = new System.Drawing.Size(199, 30);
             raca_pais_origemLabel.TabIndex = 4;
@@ -96,6 +99,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.SeaGreen;
             this.groupBox1.Controls.Add(raca_codigoLabel);
             this.groupBox1.Controls.Add(this.raca_codigoLabel1);
@@ -106,8 +111,10 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(283, 97);
+            this.groupBox1.Location = new System.Drawing.Point(292, 81);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(726, 517);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -115,11 +122,13 @@
             // 
             // raca_codigoLabel1
             // 
+            this.raca_codigoLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.raca_codigoLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.racasBindingSource, "raca_codigo", true));
-            this.raca_codigoLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raca_codigoLabel1.Location = new System.Drawing.Point(264, 86);
+            this.raca_codigoLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raca_codigoLabel1.Location = new System.Drawing.Point(236, 85);
+            this.raca_codigoLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.raca_codigoLabel1.Name = "raca_codigoLabel1";
-            this.raca_codigoLabel1.Size = new System.Drawing.Size(168, 30);
+            this.raca_codigoLabel1.Size = new System.Drawing.Size(192, 30);
             this.raca_codigoLabel1.TabIndex = 1;
             this.raca_codigoLabel1.Text = "label1";
             // 
@@ -136,17 +145,19 @@
             // raca_nomeTextBox
             // 
             this.raca_nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.racasBindingSource, "raca_nome", true));
-            this.raca_nomeTextBox.Location = new System.Drawing.Point(264, 138);
+            this.raca_nomeTextBox.Location = new System.Drawing.Point(221, 129);
+            this.raca_nomeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.raca_nomeTextBox.Name = "raca_nomeTextBox";
-            this.raca_nomeTextBox.Size = new System.Drawing.Size(168, 37);
+            this.raca_nomeTextBox.Size = new System.Drawing.Size(192, 37);
             this.raca_nomeTextBox.TabIndex = 3;
             // 
             // raca_pais_origemTextBox
             // 
             this.raca_pais_origemTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.racasBindingSource, "raca_pais_origem", true));
-            this.raca_pais_origemTextBox.Location = new System.Drawing.Point(264, 193);
+            this.raca_pais_origemTextBox.Location = new System.Drawing.Point(221, 195);
+            this.raca_pais_origemTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.raca_pais_origemTextBox.Name = "raca_pais_origemTextBox";
-            this.raca_pais_origemTextBox.Size = new System.Drawing.Size(168, 37);
+            this.raca_pais_origemTextBox.Size = new System.Drawing.Size(192, 37);
             this.raca_pais_origemTextBox.TabIndex = 5;
             // 
             // racasTableAdapter
@@ -187,9 +198,9 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.racasBindingNavigatorSaveItem,
-            this.BtnCancelar,
-            this.BtnEditar});
-            this.racasBindingNavigator.Location = new System.Drawing.Point(445, 44);
+            this.BtnCancelarRaca,
+            this.BtnEditarRaca});
+            this.racasBindingNavigator.Location = new System.Drawing.Point(454, 39);
             this.racasBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.racasBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.racasBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -296,33 +307,36 @@
             this.racasBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.racasBindingNavigatorSaveItem.Click += new System.EventHandler(this.racasBindingNavigatorSaveItem_Click_1);
             // 
-            // BtnCancelar
+            // BtnCancelarRaca
             // 
-            this.BtnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
-            this.BtnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(104, 36);
-            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelarRaca.ForeColor = System.Drawing.Color.Black;
+            this.BtnCancelarRaca.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelarRaca.Image")));
+            this.BtnCancelarRaca.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnCancelarRaca.Name = "BtnCancelarRaca";
+            this.BtnCancelarRaca.Size = new System.Drawing.Size(104, 36);
+            this.BtnCancelarRaca.Text = "Cancelar";
             // 
-            // BtnEditar
+            // BtnEditarRaca
             // 
-            this.BtnEditar.ForeColor = System.Drawing.Color.Black;
-            this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
-            this.BtnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(81, 36);
-            this.BtnEditar.Text = "Editar";
+            this.BtnEditarRaca.ForeColor = System.Drawing.Color.Black;
+            this.BtnEditarRaca.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditarRaca.Image")));
+            this.BtnEditarRaca.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnEditarRaca.Name = "BtnEditarRaca";
+            this.BtnEditarRaca.Size = new System.Drawing.Size(81, 36);
+            this.BtnEditarRaca.Text = "Editar";
             // 
             // frmRacas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(1030, 665);
             this.Controls.Add(this.racasBindingNavigator);
             this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRacas";
             this.Text = "frmRacas";
             this.Load += new System.EventHandler(this.frmRacas_Load);
@@ -362,7 +376,7 @@
         private System.Windows.Forms.Label raca_codigoLabel1;
         private System.Windows.Forms.TextBox raca_nomeTextBox;
         private System.Windows.Forms.TextBox raca_pais_origemTextBox;
-        private System.Windows.Forms.ToolStripButton BtnCancelar;
-        private System.Windows.Forms.ToolStripButton BtnEditar;
+        private System.Windows.Forms.ToolStripButton BtnCancelarRaca;
+        private System.Windows.Forms.ToolStripButton BtnEditarRaca;
     }
 }

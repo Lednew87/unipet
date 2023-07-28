@@ -62,8 +62,10 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.clientesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.BtnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.BtnEditar = new System.Windows.Forms.ToolStripButton();
+            this.btnCancelar = new System.Windows.Forms.ToolStripButton();
+            this.btnEditar = new System.Windows.Forms.ToolStripButton();
+            this.BtnFoto = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             cli_codigoLabel = new System.Windows.Forms.Label();
             cli_nomeLabel = new System.Windows.Forms.Label();
             cli_celularLabel = new System.Windows.Forms.Label();
@@ -154,6 +156,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.groupBox1.Controls.Add(this.BtnFoto);
             this.groupBox1.Controls.Add(cli_codigoLabel);
             this.groupBox1.Controls.Add(this.cli_codigoLabel1);
             this.groupBox1.Controls.Add(cli_nomeLabel);
@@ -282,7 +285,6 @@
             this.clientesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.clientesBindingNavigator.DeleteItem = null;
             this.clientesBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
-            this.clientesBindingNavigator.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientesBindingNavigator.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.clientesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -297,16 +299,16 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.clientesBindingNavigatorSaveItem,
-            this.BtnCancelar,
-            this.BtnEditar});
-            this.clientesBindingNavigator.Location = new System.Drawing.Point(425, 39);
+            this.btnCancelar,
+            this.btnEditar});
+            this.clientesBindingNavigator.Location = new System.Drawing.Point(485, 39);
             this.clientesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.clientesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.clientesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.clientesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.clientesBindingNavigator.Name = "clientesBindingNavigator";
             this.clientesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clientesBindingNavigator.Size = new System.Drawing.Size(593, 39);
+            this.clientesBindingNavigator.Size = new System.Drawing.Size(533, 39);
             this.clientesBindingNavigator.TabIndex = 1;
             this.clientesBindingNavigator.Text = "bindingNavigator1";
             this.clientesBindingNavigator.RefreshItems += new System.EventHandler(this.clientesBindingNavigator_RefreshItems);
@@ -314,7 +316,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 36);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 36);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
@@ -408,27 +410,45 @@
             this.clientesBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.clientesBindingNavigatorSaveItem.Click += new System.EventHandler(this.clientesBindingNavigatorSaveItem_Click);
             // 
-            // BtnCancelar
+            // btnCancelar
             // 
-            this.BtnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
-            this.BtnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(104, 36);
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(89, 36);
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // BtnEditar
+            // btnEditar
             // 
-            this.BtnEditar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditar.ForeColor = System.Drawing.Color.Black;
-            this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
-            this.BtnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(81, 36);
-            this.BtnEditar.Text = "Editar";
-            this.BtnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(73, 36);
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // BtnFoto
+            // 
+            this.BtnFoto.BackColor = System.Drawing.Color.White;
+            this.BtnFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnFoto.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.BtnFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFoto.ForeColor = System.Drawing.Color.Black;
+            this.BtnFoto.Location = new System.Drawing.Point(367, 298);
+            this.BtnFoto.Name = "BtnFoto";
+            this.BtnFoto.Size = new System.Drawing.Size(141, 40);
+            this.BtnFoto.TabIndex = 14;
+            this.BtnFoto.Text = "button1";
+            this.BtnFoto.UseVisualStyleBackColor = false;
+            this.BtnFoto.Click += new System.EventHandler(this.BtnFoto_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Title = "Escolha a foto do cliente:";
             // 
             // frmCadClientes
             // 
@@ -437,12 +457,12 @@
             this.ClientSize = new System.Drawing.Size(1030, 665);
             this.Controls.Add(this.clientesBindingNavigator);
             this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCadClientes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmCadClientes";
-            this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.frmCadClientes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -483,8 +503,10 @@
         private System.Windows.Forms.MaskedTextBox cli_cpfMaskedTextBox;
         private System.Windows.Forms.TextBox cli_enderecoTextBox;
         private System.Windows.Forms.PictureBox cli_fotoPictureBox;
-        private System.Windows.Forms.ToolStripButton BtnCancelar;
-        private System.Windows.Forms.ToolStripButton BtnEditar;
+        private System.Windows.Forms.ToolStripButton btnCancelar;
+        private System.Windows.Forms.ToolStripButton btnEditar;
         private System.Windows.Forms.BindingNavigator clientesBindingNavigator;
+        private System.Windows.Forms.Button BtnFoto;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

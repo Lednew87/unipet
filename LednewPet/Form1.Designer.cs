@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PanelCenter = new System.Windows.Forms.Panel();
+            this.LabelLogoLeft = new System.Windows.Forms.Label();
             this.LabelLogoRight = new System.Windows.Forms.Label();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.PanelSelect = new System.Windows.Forms.Panel();
@@ -43,7 +44,6 @@
             this.LabelTitle = new System.Windows.Forms.Label();
             this.BtnMin = new System.Windows.Forms.Button();
             this.BtnSair = new System.Windows.Forms.Button();
-            this.LabelLogoLeft = new System.Windows.Forms.Label();
             this.PanelCenter.SuspendLayout();
             this.PanelLeft.SuspendLayout();
             this.PanelTop.SuspendLayout();
@@ -57,14 +57,28 @@
             this.PanelCenter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PanelCenter.Controls.Add(this.LabelLogoLeft);
             this.PanelCenter.Controls.Add(this.LabelLogoRight);
-            this.PanelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelCenter.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelCenter.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelCenter.ForeColor = System.Drawing.Color.White;
             this.PanelCenter.Location = new System.Drawing.Point(277, 52);
             this.PanelCenter.Name = "PanelCenter";
             this.PanelCenter.Size = new System.Drawing.Size(753, 613);
             this.PanelCenter.TabIndex = 1;
             this.PanelCenter.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelCenter_Paint);
+            // 
+            // LabelLogoLeft
+            // 
+            this.LabelLogoLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelLogoLeft.AutoSize = true;
+            this.LabelLogoLeft.BackColor = System.Drawing.Color.SeaGreen;
+            this.LabelLogoLeft.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabelLogoLeft.Font = new System.Drawing.Font("Century Gothic", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLogoLeft.ForeColor = System.Drawing.Color.White;
+            this.LabelLogoLeft.Location = new System.Drawing.Point(4, 138);
+            this.LabelLogoLeft.Name = "LabelLogoLeft";
+            this.LabelLogoLeft.Size = new System.Drawing.Size(140, 338);
+            this.LabelLogoLeft.TabIndex = 11;
+            this.LabelLogoLeft.Text = "* * * * *\r\n*U      *\r\n* N     *\r\n*   I     *\r\n*    P   *\r\n*     E  *\r\n*      T *\r" +
+    "\n* * * * *";
             // 
             // LabelLogoRight
             // 
@@ -219,9 +233,9 @@
             this.LabelTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTitle.Location = new System.Drawing.Point(303, 7);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(380, 30);
+            this.LabelTitle.Size = new System.Drawing.Size(430, 30);
             this.LabelTitle.TabIndex = 9;
-            this.LabelTitle.Text = "\"UNIPET, seu pet, nossa família!\"";
+            this.LabelTitle.Text = "\" * UNIPET, seu pet, nossa família! * \"";
             // 
             // BtnMin
             // 
@@ -252,21 +266,6 @@
             this.BtnSair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnSair.UseVisualStyleBackColor = true;
             this.BtnSair.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // LabelLogoLeft
-            // 
-            this.LabelLogoLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelLogoLeft.AutoSize = true;
-            this.LabelLogoLeft.BackColor = System.Drawing.Color.SeaGreen;
-            this.LabelLogoLeft.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabelLogoLeft.Font = new System.Drawing.Font("Century Gothic", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLogoLeft.ForeColor = System.Drawing.Color.White;
-            this.LabelLogoLeft.Location = new System.Drawing.Point(4, 138);
-            this.LabelLogoLeft.Name = "LabelLogoLeft";
-            this.LabelLogoLeft.Size = new System.Drawing.Size(140, 338);
-            this.LabelLogoLeft.TabIndex = 11;
-            this.LabelLogoLeft.Text = "* * * * *\r\n*U      *\r\n* N     *\r\n*   I     *\r\n*    P   *\r\n*     E  *\r\n*      T *\r" +
-    "\n* * * * *";
             // 
             // Form1
             // 
