@@ -38,6 +38,7 @@
             System.Windows.Forms.Label cli_fotoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadClientes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnFoto = new System.Windows.Forms.Button();
             this.cli_codigoLabel1 = new System.Windows.Forms.Label();
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.petshopDataSet = new LednewPet.petshopDataSet();
@@ -64,7 +65,6 @@
             this.clientesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
-            this.BtnFoto = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             cli_codigoLabel = new System.Windows.Forms.Label();
             cli_nomeLabel = new System.Windows.Forms.Label();
@@ -156,6 +156,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.BtnFoto);
             this.groupBox1.Controls.Add(cli_codigoLabel);
             this.groupBox1.Controls.Add(this.cli_codigoLabel1);
@@ -171,17 +172,31 @@
             this.groupBox1.Controls.Add(this.cli_enderecoTextBox);
             this.groupBox1.Controls.Add(cli_fotoLabel);
             this.groupBox1.Controls.Add(this.cli_fotoPictureBox);
-            this.groupBox1.Enabled = false;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(292, 81);
+            this.groupBox1.Location = new System.Drawing.Point(292, 50);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(726, 517);
+            this.groupBox1.Size = new System.Drawing.Size(726, 547);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dados do Cliente";
+            this.groupBox1.Text = "*Dados do Cliente*";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // BtnFoto
+            // 
+            this.BtnFoto.BackColor = System.Drawing.Color.White;
+            this.BtnFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnFoto.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.BtnFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFoto.ForeColor = System.Drawing.Color.Black;
+            this.BtnFoto.Location = new System.Drawing.Point(384, 298);
+            this.BtnFoto.Name = "BtnFoto";
+            this.BtnFoto.Size = new System.Drawing.Size(141, 40);
+            this.BtnFoto.TabIndex = 14;
+            this.BtnFoto.Text = "button1";
+            this.BtnFoto.UseVisualStyleBackColor = false;
+            this.BtnFoto.Click += new System.EventHandler(this.BtnFoto_Click);
             // 
             // cli_codigoLabel1
             // 
@@ -193,6 +208,7 @@
             this.cli_codigoLabel1.Size = new System.Drawing.Size(80, 30);
             this.cli_codigoLabel1.TabIndex = 1;
             this.cli_codigoLabel1.Text = "label1";
+            this.cli_codigoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cli_codigoLabel1.Click += new System.EventHandler(this.cli_codigoLabel1_Click);
             // 
             // clientesBindingSource
@@ -254,13 +270,14 @@
             // 
             // cli_fotoPictureBox
             // 
+            this.cli_fotoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cli_fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.clientesBindingSource, "cli_foto", true));
             this.cli_fotoPictureBox.Location = new System.Drawing.Point(181, 298);
             this.cli_fotoPictureBox.Name = "cli_fotoPictureBox";
-            this.cli_fotoPictureBox.Size = new System.Drawing.Size(168, 183);
+            this.cli_fotoPictureBox.Size = new System.Drawing.Size(185, 185);
+            this.cli_fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cli_fotoPictureBox.TabIndex = 13;
             this.cli_fotoPictureBox.TabStop = false;
-            this.cli_fotoPictureBox.Click += new System.EventHandler(this.cli_fotoPictureBox_Click);
             // 
             // clientesTableAdapter
             // 
@@ -285,6 +302,7 @@
             this.clientesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.clientesBindingNavigator.DeleteItem = null;
             this.clientesBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
+            this.clientesBindingNavigator.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientesBindingNavigator.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.clientesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -301,14 +319,14 @@
             this.clientesBindingNavigatorSaveItem,
             this.btnCancelar,
             this.btnEditar});
-            this.clientesBindingNavigator.Location = new System.Drawing.Point(485, 39);
+            this.clientesBindingNavigator.Location = new System.Drawing.Point(454, 9);
             this.clientesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.clientesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.clientesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.clientesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.clientesBindingNavigator.Name = "clientesBindingNavigator";
             this.clientesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clientesBindingNavigator.Size = new System.Drawing.Size(533, 39);
+            this.clientesBindingNavigator.Size = new System.Drawing.Size(564, 39);
             this.clientesBindingNavigator.TabIndex = 1;
             this.clientesBindingNavigator.Text = "bindingNavigator1";
             this.clientesBindingNavigator.RefreshItems += new System.EventHandler(this.clientesBindingNavigator_RefreshItems);
@@ -316,7 +334,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 36);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 36);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
@@ -416,7 +434,7 @@
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(89, 36);
+            this.btnCancelar.Size = new System.Drawing.Size(104, 36);
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -426,24 +444,9 @@
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(73, 36);
+            this.btnEditar.Size = new System.Drawing.Size(81, 36);
             this.btnEditar.Text = "Editar";
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // BtnFoto
-            // 
-            this.BtnFoto.BackColor = System.Drawing.Color.White;
-            this.BtnFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnFoto.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.BtnFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFoto.ForeColor = System.Drawing.Color.Black;
-            this.BtnFoto.Location = new System.Drawing.Point(367, 298);
-            this.BtnFoto.Name = "BtnFoto";
-            this.BtnFoto.Size = new System.Drawing.Size(141, 40);
-            this.BtnFoto.TabIndex = 14;
-            this.BtnFoto.Text = "button1";
-            this.BtnFoto.UseVisualStyleBackColor = false;
-            this.BtnFoto.Click += new System.EventHandler(this.BtnFoto_Click);
             // 
             // openFileDialog1
             // 

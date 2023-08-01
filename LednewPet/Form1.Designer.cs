@@ -230,22 +230,23 @@
             // LabelTitle
             // 
             this.LabelTitle.AutoSize = true;
-            this.LabelTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTitle.Location = new System.Drawing.Point(303, 7);
+            this.LabelTitle.Font = new System.Drawing.Font("Century Gothic", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitle.Location = new System.Drawing.Point(151, 0);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(430, 30);
+            this.LabelTitle.Size = new System.Drawing.Size(648, 46);
             this.LabelTitle.TabIndex = 9;
             this.LabelTitle.Text = "\" * UNIPET, seu pet, nossa família! * \"";
+            this.LabelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BtnMin
             // 
             this.BtnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMin.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMin.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMin.ForeColor = System.Drawing.Color.White;
             this.BtnMin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnMin.Location = new System.Drawing.Point(938, 7);
+            this.BtnMin.Location = new System.Drawing.Point(938, 3);
             this.BtnMin.Name = "BtnMin";
-            this.BtnMin.Size = new System.Drawing.Size(35, 35);
+            this.BtnMin.Size = new System.Drawing.Size(35, 39);
             this.BtnMin.TabIndex = 8;
             this.BtnMin.Text = "-";
             this.BtnMin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -255,12 +256,12 @@
             // BtnSair
             // 
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSair.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSair.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSair.ForeColor = System.Drawing.Color.White;
             this.BtnSair.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnSair.Location = new System.Drawing.Point(981, 7);
+            this.BtnSair.Location = new System.Drawing.Point(981, 3);
             this.BtnSair.Name = "BtnSair";
-            this.BtnSair.Size = new System.Drawing.Size(35, 35);
+            this.BtnSair.Size = new System.Drawing.Size(35, 39);
             this.BtnSair.TabIndex = 7;
             this.BtnSair.Text = "X";
             this.BtnSair.TextAlign = System.Drawing.ContentAlignment.TopCenter;

@@ -120,11 +120,6 @@ namespace LednewPet
 
         }
 
-        private void cli_fotoPictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void clientesBindingNavigator_RefreshItems(object sender, EventArgs e)
         {
 
@@ -167,7 +162,22 @@ namespace LednewPet
 
         private void BtnFoto_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
+            try { 
+                openFileDialog1.Filter = "Fotos (*.jpg; *.png;) | *.jpg; *.png;";
+              if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                cli_fotoPictureBox.Image = new Bitmap(openFileDialog1.FileName);
+            }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tipo de arquivo não permitido!", "UNIPET, seu pet, nossa família!"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+            
+            
         }
     }
 }
